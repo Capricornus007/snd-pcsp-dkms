@@ -1,6 +1,6 @@
 _pkgbase=snd-pcsp
 pkgname=${_pkgbase}-dkms
-pkgver=7.2.5
+pkgver=7.2.6
 pkgrel=1
 pkgdesc="An in-tree driver for the PC speaker which allows it to act like a primitive sound card (DKMS)"
 arch=('x86_64')
@@ -10,7 +10,7 @@ depends=('dkms')
 conflicts=("${_pkgbase}")
 source=("https://www.kernel.org/pub/linux/kernel/v${pkgver%%.*}.x/linux-${pkgver}.tar.xz"
         'dkms.conf')
-sha512sums=('18767f513267e72eb9a946126e056ea760b03f1dcfdcecbc715969b6a91436afc422fa12bcef29b1ad1d2146f83a37126b502f0407aa4f91347bf26e9f7d2bd6'
+sha512sums=('2bdcc46f2fb4368aace87b8d063ee50ba93e763f31b1b2401abe2109371bd7ccc1432d0d07159f00f0fc5dbe2e1953ade1d9973bcf4fbc73aaaf056d99652e67'
             '77a0678e6f1d1eaa7552daa4b8d950afa92d52210fc6fd9d1a17db839408f2fd85fd75334a5cfa0d4589d708c633dc000e5a553f5d9720d0a9cb6474208dc16b')
 
 package() {
